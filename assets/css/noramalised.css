@@ -1,0 +1,41 @@
+:root {
+  --primary: #ff8b59;
+  --secondary: #adde44;
+  --dark: #232323;
+  --light: #ffffff;
+  --neutral: #636363;
+}
+html {
+  font-family: "Montserrat", Courier, monospace;
+}
+h1 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.color-primary {
+  color: var(--primary);
+}
+.color-secondary {
+  color: var(--secondary);
+}
+.color-dark {
+  color: var(--dark);
+}
+.color-light {
+  color: var(--light);
+}
+.color-neutral {
+  color: var(--neutral);
+}
