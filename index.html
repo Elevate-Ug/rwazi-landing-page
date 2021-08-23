@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="icon" href="assets/images/favicon.png" />
@@ -21,7 +21,119 @@
     <title>Rwazi</title>
   </head>
   <body>
-    <h1 class="color-secondary">Rwazi.</h1>
+    <div class="main">
+      <div class="hero color-light">
+        <section>
+          <nav>
+            <a href="/"><img class="logo" src="assets/images/logo.png" /></a
+            ><a href="#"
+              ><button class="btn btn-secondary">
+                <img src="assets/images/icons/phone.svg" alt=""/>
+                <p class="text-semi-bold">Contact Us</p>
+              </button></a
+            >
+          </nav>
+          <div class="text-content">
+            <div>
+              <h1>Mappers<span class="color-secondary">.</span></h1>
+              <h2>Central</h2>
+            </div>
+            <p>
+              Your one stop center for everything<br />
+              <span class="text-bold">mapper</span> related
+            </p>
+            <a href="#"></a>
+              <button class="btn btn-primary">Get Started</button></a
+            >
+          </div>
+          <div class="hero__scroll-text flex-column-center">
+            <div><img src="assets/images/icons/arrow-down.svg" /></div>
+            <p class="color-primary">
+              Scroll <span class="text-bold">down</span>
+            </p>
+          </div>
+        </section>
+      </div>
+      <section class="main__resources">
+        <header class="text-center">
+          <h1 class="relative">
+            Resources<span class="color-secondary">.</span>
+          </h1>
+        </header>
+        <div class="main__resources-container">
+          <div class="text-content">
+            <div>
+              <h1>New<br /><span class="color-secondary">Mapper?</span></h1>
+            </div>
+            <p class="color-neutral">
+              <span class="text-bold">Great!</span> We’re glad to have you
+              onboard and we’re here<br />
+              to aid you on your journey
+            </p>
+            <a href="#"
+              ><button class="btn btn-primary"><img src="assets/images/icons/play.svg" alt=""/><p>Watch Explainer</p></button></a
+            >
+          </div>
+          <div class="cards-wrapper">
+            <div class="card">
+              <h3>New to<br>
+                Mapping?</h3>
+            </div>
+            <div class="card">
+              <h3>Already<br>
+                an active<br>
+                mapper?</h3>
+            </div>
+            <div class="card">
+              <h3>Mapping<br>
+                your way<br>
+                to growth</h3>
+            </div>
+            <div class="card">
+              <h3>FAQ’s</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section  class="contact">
+        <div class="contact-image"><img src="assets/images/contact-image.jpg" width="100%"/></div>
+        <div class="contact__left">
+         <h1 >Need Help?<br><span class="color-primary">Contact Us</span></h1>
+         <form action="/">
+          <input type="text" name="name" min="3" max="30" class="name-input" placeholder="Name" required/>
+          <input type="text" name="country" min="3" max="30"  class="counry-input" placeholder="Country" required/>
+          <input type="email" name="country" class="email-input" placeholder="Email Address" required/>
+          <textarea class="message-input" placeholder="Message" required></textarea>
+          <button type="submit" class="btn btn-primary form-btn">Submit</button>
+        </form>
+        </div>
+      </section>
+      <section class="footer">
+        <footer>
+          <div>
+          <img  src="assets/images/logo-black.png" class="logo">
+        </div>
+          <div class="links"><h3>Incase you<br><span class="color-primary">missed</span></h3>
+            <ul>
+              <a href="#"><li><p>New to mapping?</p></li></a>
+              <a href="#"><li><p>Active Mappers</p></li></a>
+              <a href="#"><li><p>Mapping Your way to growth</p></li></a>
+              <a href="#"><li><p>FAQ's</p></li></a>
+            </ul>
+          </div>
+          <div class="socials ">
+            <h2 class="color-neutral">Follow <span class="color-secondary">us on</span></h2>
+            <div>
+              <a href="#"><img src="assets/images/icons/instagram.svg"/></a>
+              <a href="#"><img src="assets/images/icons/facebook.svg"/></a>
+              <a href="#"><img src="assets/images/icons/LinkedIn.svg"/></a>
+              <a href="#"><img src="assets/images/icons/twitter.svg"/></a>
+            </div>
+          </div>
+        </footer>
+        <p class="color-neutral">rwazi 2021. All rights reserved</p>
+      </section>
+    </div>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
