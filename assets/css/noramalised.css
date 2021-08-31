@@ -5,24 +5,70 @@
   --light: #ffffff;
   --neutral: #636363;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::selection {
+  background: var(--secondary);
+  color: var(--light);
+}
+img::selection {
+  background: none;
+}
 html {
-  font-family: "Montserrat", Courier, monospace;
+  font-family: "Montserrat", Arial, monospace;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 6rem;
   font-weight: 900;
+  letter-spacing: -6px;
+  /* line-height: 1.1; */
 }
 h2 {
-  font-size: 1.6rem;
-  font-weight: 700;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: -2px;
 }
 h3 {
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 1.125rem;
+  font-weight: 900;
 }
 p {
   font-size: 1rem;
   font-weight: 400;
+}
+a {
+  text-decoration: none;
+}
+section {
+  max-width: 1159px;
+  margin: 0 auto;
+  padding-top: 110px;
+  /* height: 100vh; */
+  /* min-height: 500px; */
+  width: 100%;
+}
+body::-webkit-scrollbar {
+  width: 0.2em;
+}
+
+body::-webkit-scrollbar-track {
+  background: none;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  border-radius: 10px;
+}
+input,
+textarea,
+button,
+select,
+div,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .color-primary {
   color: var(--primary);
@@ -38,4 +84,80 @@ p {
 }
 .color-neutral {
   color: var(--neutral);
+}
+.text-bold {
+  font-weight: 700;
+}
+.text-semi-bold {
+  font-weight: 600;
+}
+.text-center {
+  text-align: center;
+}
+.relative {
+  position: relative;
+}
+.btn {
+  transition: 0.2s ease;
+  background: none;
+  outline: none;
+  border: none;
+  width: 15.438rem;
+  height: 3.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+.btn img {
+  margin-right: 10px;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-radius: 30px;
+  color: var(--light);
+  font-size: 1rem;
+}
+.btn-secondary {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  color: var(--light);
+  font-size: 1rem;
+}
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1159px) {
+  section {
+    /* width: 100%; */
+    padding: 110px 48px;
+    /* background: red; */
+  }
+}
+@media screen and (max-width: 600px) {
+  section {
+    padding: 48px 48px;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .btn {
+    width: 170px;
+    height: 48px;
+  }
+}
+@media screen and (max-width: 600px) {
+  section {
+    padding: 24px 24px;
+  }
 }
